@@ -18,7 +18,7 @@ button.addEventListener('mouseleave', () => {
 
 
 
-
+// 
 const lessonsItems = document.querySelectorAll('.lessons__item');
 
 for (let i = 0; i < lessonsItems.length; i++) {
@@ -39,13 +39,19 @@ function classRemove(item) {
   }
 }
 function chengeHeight(item) {
+  let itemVideo = item.querySelector('iframe');
   if (item.classList.contains('_active')) {
+    itemVideo.style.opacity = '1';
     item.style.height = item.scrollHeight + "px";
   } else {
+    itemVideo.style.opacity = '0';
     item.style.height = 50 + "px";
   }
 }
 
+
+
+// 
 const flags = document.querySelectorAll('.fa-flag');
 const progresSpan = document.querySelector('#progress');
 
@@ -66,3 +72,40 @@ for (let i = 0; i < flags.length; i++) {
     localStorage.setItem('flagsNumber', i);
   }
 }
+
+
+
+
+// 
+// Select all the iframes on your page
+const iframes = document.querySelectorAll('iframe');
+const loadSpan = document.querySelector('.load-box span');
+let body = document.querySelector('body');
+// Counter to keep track of loaded iframes
+let loadedCount = 0;
+
+// Function to check if all iframes have loaded
+function checkAllIframesLoaded() {
+  if (loadedCount === iframes.length) {
+    // All iframes have loaded, do something here
+    setTimeout(() => {
+      body.classList.remove('scroll_none');
+    }, 1000);
+  }
+}
+
+// Loop through each iframe and add an event listener for the 'load' event
+iframes.forEach(iframe => {
+  iframe.addEventListener('load', () => {
+    // Increment the loaded count
+    loadedCount++;
+    loadMove()
+    // Check if all iframes have loaded
+    checkAllIframesLoaded();
+  });
+
+  function loadMove(){
+    let procent = 100 / iframes.length * loadedCount;
+    loadSpan.style.width = procent + '%';
+  }
+});

@@ -7,17 +7,17 @@ const lessonsStore = [
     },
     {
       lessonsName: '№2 Новые теги',
-      lessonsLinkVideo: 'https://www.youtube.com/embed/HA3CkToPbyw',
+      lessonsLinkVideo: 'https://www.youtube.com/embed/5NA06q-APCI',
       lessonsLinkSample: 'https://teachalexit.github.io/manuals/frontend/f1.2/f1.2.html'
     },
     {
       lessonsName: '№3 Знакомство с CSS',
-      lessonsLinkVideo: 'https://www.youtube.com/embed/2BBxEBNo45Q',
+      lessonsLinkVideo: 'https://www.youtube.com/embed/345P4oJlnkU',
       lessonsLinkSample: 'https://teachalexit.github.io/manuals/frontend/f1.3/f1.3.html'
     },
     {
       lessonsName: '№4 Секции',
-      lessonsLinkVideo: 'https://www.youtube.com/embed/2BBxEBNo45Q',
+      lessonsLinkVideo: 'https://www.youtube.com/embed/GTdZrzxMkKs',
       lessonsLinkSample: 'https://teachalexit.github.io/manuals/frontend/f1.4/f1.4.html'
     },
     {
