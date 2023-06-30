@@ -90,6 +90,8 @@ if (localStorage.getItem('flagsNumber')) {
   } else {
     for (let i = 0; i < flags.length; i++) {
       flags[i].classList.remove('_marked');
+      progresSpan.innerText = localStorage.getItem('progressNumber');
+      levelSpan.innerText = localStorage.getItem('levelNumber');
     }
   }
 } else {
