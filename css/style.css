@@ -218,6 +218,8 @@ header a {
 
 main{
   padding: 60px 0;
+  position: relative;
+  z-index: 2;
 }
 main .container{
   display: flex;
