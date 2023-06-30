@@ -54,7 +54,7 @@ nav {
   border-radius: 0 0 16px 16px;
   padding: 8px 0;
   z-index: 15;
-  transition: 0.4s;
+  transition: 2s;
 }
 
 .nav__elements {
@@ -185,12 +185,11 @@ header .container {
   flex-direction: column;
   color: var(--whiteColor);
   gap: 20px;
-  transition: 1s;
+  transition: 2s;
 }
 
 h1 {
-
-  font-size: 100px;
+  font-size: 130px;
   line-height: 100%;
 }
 
@@ -214,6 +213,7 @@ header a {
   box-shadow: 0 0 32px #fcfcff76;
   position: relative;
   z-index: 10;
+  transition: 0.6s;
 }
 
 main{
@@ -264,6 +264,10 @@ h2{
   display: flex;
   gap: 10px;
   align-items: center;
+}
+.lessons__prew{
+  max-width: 800px;
+  line-height: 160%;
 }
 .fa-flag{
   color: #6361d4;
@@ -343,6 +347,7 @@ footer{
 }
 
 .load-box{
+  visibility: hidden;
   opacity: 0;
   transition: 0.4s;
   text-align: center;
@@ -356,6 +361,7 @@ footer{
 }
 .scroll_none .load-box{
   opacity: 1;
+  visibility: visible;
 }
 .load-box span{
   position: absolute;
@@ -368,19 +374,39 @@ footer{
   border-radius: 10px;
   transition: 0.2s;
   background: linear-gradient(90deg, var(--accentColor), var(--whiteColor), var(--accentColor));
-  background-size: 200px;
-  animation: loadSpan 3s infinite linear;
+  background-size: 400px;
+  background-repeat: repeat;
+  animation: loadSpan 1s infinite linear;
 }
 @keyframes loadSpan{
   0%{
     background-position: top 0 left 0%;
   }
   100%{
-    background-position: top 0 left 200%;
+    background-position: top 0 left 400px;
   }
 }
 .load-box h3{
   color: var(--whiteColor);
   font-size: 32px;
   transform: translateY(20px);
+}
+
+.level-finish{
+  display: inline-block;
+  background-color: var(--accentColor);
+  color: var(--whiteColor);
+  padding: 16px 48px;
+  border-radius: 16px;
+  border: 1px solid var(--accentColor);
+  font-size: 20px;
+  font-weight: 700;
+  transform-style: preserve-3d;
+  perspective: 100px;
+  box-shadow: 0 0 32px #fcfcff76;
+  position: relative;
+  z-index: 10;
+  cursor: pointer;
+  margin: auto;
+  transition: 0.6s;
 }

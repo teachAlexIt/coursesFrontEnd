@@ -10,6 +10,7 @@
   <title>Курс-Создание сайтов</title>
   <link rel="icon" href="./img/icon.svg">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/media.css">
   <script src="./js/store.js" defer></script>
   <script src="https://kit.fontawesome.com/0dfb09cd7e.js" crossorigin="anonymous" defer></script>
   <script src="./js/script.js" defer></script>
@@ -25,8 +26,8 @@
   <nav>
     <div class="container">
       <div class="nav__elements">
-        <a href="#home" class="nav__logo"><img src="./img/logo.svg" alt=""></a>
-        <p class="nav__progress">Прогресс <span id="progress"></span>%</p>
+        <a href="#start" class="nav__logo"><img src="./img/logo.svg" alt=""></a>
+        <p class="nav__progress">Прогресс <span id="progress">0</span>% от <span id="level">1</span> уровня</p>
         <div class="nav__contact">
           <a href="tel:+905439100379">+90-(543)-910-0379</a>
           <div class="nav__icons">
@@ -41,7 +42,7 @@
       </div>
     </div>
   </nav>
-  <header id="home">
+  <header id="start">
 
     <div class="bg-box">
       <div class="bg-box__item"></div>
@@ -56,18 +57,20 @@
       <p>
         Создавать сайты
       </p>
-      <a class="animationButton" href="#start">Начать</a>
+      <a class="animationButton" href="#level1">Начать</a>
     </div>
   </header>
-  <main class="lessons" id="start">
+  <main class="lessons" id="level1">
     <div class="container">
       <section class="lessons__block oneBlok">
         <h2>Уровень 1</h2>
         <p class="lessons__prew">
-          В первом уровне <b>вы создадите 4-ёх страничный сайт</b>!
-          <br>
-          Вы познакомитесь с <b>основными HTML тегами</b> для создания сайта, а также узнаете <b>CSS свойства</b> для
+          В первом уровне вы познакомитесь с <b>основными HTML тегами</b> для создания сайта, а также узнаете <b>CSS свойства</b> для
           стилизации элементов.
+          <br>
+          В течении 8 звнятий вы <b>создадите 4-ёх страничный сайт!</b>
+          <br>
+          Затем вы <b>опубликуете свой сайт</b> на бесплатном хостинге и он будет доступен в интернете по ссылки.
         </p>
         <a href="https://teachalexit.github.io/manuals/frontend/f1.8/f1.8.html" class="_sample" target="_blank">
           Вот что вы создадите
@@ -75,6 +78,7 @@
         <div class="lessons__list">
           <!--  -->
         </div>
+        <button class="level-finish animationButton">Я Завершил!</button>
       </section>
 
       <section class="lessons__block twoBlok">
@@ -86,6 +90,7 @@
         <div class="lessons__list">
           <!--  -->
         </div>
+        <button class="level-finish animationButton">Я Завершил!</button>
       </section>
     </div>
   </main>

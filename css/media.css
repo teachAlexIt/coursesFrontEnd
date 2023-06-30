@@ -1,0 +1,43 @@
+@media (max-width:1340px) {
+  h1{
+    font-size: 12vw;
+  }
+}
+
+@media (max-width:650px){
+  .container{
+    padding: 0 16px;
+  }
+  header p{
+    font-size: 7vw;
+  }
+  .nav__elements{
+    flex-wrap: wrap;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .nav__logo img{
+    width: 120px;
+  }
+  .nav__progress{
+    flex-grow: 1;
+    text-align: center;
+  }
+  .nav__contact{
+    flex-grow: 1;
+    flex-direction: row;
+  }
+  header{
+    padding: 120px 0 70px;
+    height: auto;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+  main{
+    padding-top: 120px;
+  }
+  .lessons__block{
+    padding: 40px 12px;
+  }
+}
