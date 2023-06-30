@@ -40,4 +40,8 @@
   .lessons__block{
     padding: 40px 12px;
   }
+  iframe{
+    height: 48vw;
+    min-height: 48vw;
+  }
 }
