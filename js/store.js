@@ -53,17 +53,17 @@ const lessonsStore = [
   lessonsBlockTwoStore = [
     {
       lessonsName: 'Урок №2.1',
-      lessonsLinkVideo: 'https://teachalexit.github.io/foto/img/1.svg',
+      lessonsLinkVideo: '',
       lessonsLinkSample: 'https://teachalexit.github.io/manuals/404.html'
     },
     {
       lessonsName: 'Урок №2.2',
-      lessonsLinkVideo: 'https://teachalexit.github.io/foto/img/1.svg',
+      lessonsLinkVideo: '',
       lessonsLinkSample: 'https://teachalexit.github.io/manuals/404.html'
     },
     {
       lessonsName: 'Урок №2.3',
-      lessonsLinkVideo: 'https://teachalexit.github.io/foto/img/1.svg',
+      lessonsLinkVideo: '',
       lessonsLinkSample: 'https://teachalexit.github.io/manuals/404.html'
     },
   ],
@@ -77,7 +77,6 @@ render(lessonsListOneDiv, 0);
 render(lessonsListTwoDiv, 1);
 
 function render(lessonsList, numberStoreBlock) {
-  console.log(lessonsStore[numberStoreBlock]);
   for (let i = 0; i < lessonsStore[numberStoreBlock].length; i++) {
     let lessonsItemDiv = document.createElement('div');
     lessonsItemDiv.setAttribute('class', 'lessons__item');

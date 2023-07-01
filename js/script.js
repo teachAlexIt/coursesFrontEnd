@@ -153,11 +153,19 @@ function checkAllIframesLoaded() {
 
 
 iframes.forEach(iframe => {
-  iframe.addEventListener('load', () => {
+  let iframeSRC = iframe.getAttribute('src');
+  if (iframeSRC != '') {
+    iframe.addEventListener('load', () => {
+      loadedCount++;
+      loadMove()
+      checkAllIframesLoaded();
+    });
+  } else {
     loadedCount++;
     loadMove()
     checkAllIframesLoaded();
-  });
+  }
+
 
   function loadMove() {
     let procent = 100 / iframes.length * loadedCount;
