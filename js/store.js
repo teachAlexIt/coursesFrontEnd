@@ -15,7 +15,7 @@ const lessonsStore = [
     },
     {
       lessonsName: '№1.2 Новые теги',
-      lessonsLinkVideo: 'https://www.youtube.com/embed/5NA06q-APCI',
+      lessonsLinkVideo: 'https://www.youtube.com/embed/niJX2Xo2sTM',
       lessonsLinkSample: 'https://teachalexit.github.io/manuals/frontend/f1.2/f1.2.html'
     },
     {
