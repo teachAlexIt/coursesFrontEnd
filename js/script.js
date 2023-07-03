@@ -26,14 +26,22 @@ for (let f = 0; f < levelFinishButtons.length; f++) {
     let nextLevelClass = 'flag' + levelNumber;
     for (let x = 0; x < flags.length; x++) {
       flags[x].classList.remove('_marked');
-      if (flags[x].classList.contains(nextLevelClass)) {
-        flags[x].classList.add('_marked');
-        localStorage.setItem('flagsNumber', x);
-        break
-      } else {
-        localStorage.setItem('flagsNumber', 100);
-      }
+      // if (flags[x].classList.contains(nextLevelClass)) {
+      //   flags[x].classList.add('_marked');
+      //   localStorage.setItem('flagsNumber', x);
+      //   // break
+      // } else {
+      //   localStorage.setItem('flagsNumber', 100);
+      // }
     }
+    let flagNextLevel = document.querySelector('.'+ nextLevelClass);
+    if (flagNextLevel){
+      flagNextLevel.classList.add('_marked');
+      localStorage.setItem('flagsNumber', 0);
+    }else{
+      localStorage.setItem('flagsNumber', 100);
+    }
+    
     localStorage.setItem('progressNumber', 100);
     localStorage.setItem('levelNumber', levelNumber);
 
